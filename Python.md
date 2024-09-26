@@ -298,7 +298,9 @@ Given the argument numlist as a list of numbers, return True if all numbers in t
             return False
  return True       
 ```
-Python Practice 2
+# Python Practice 2
+## Q1
+```
 def q1(radius):
     # Given the radius of a sphere, calculate and return 
     # its surface area. Surface area is given by the following:
@@ -308,6 +310,10 @@ def q1(radius):
     return 4*3.14159*(radius**2)
 
     pass
+```
+## Q2
+
+```
 def q2(addr):
     # Given an IPv4 address as a string in dotted decimal notation,
     # return True if the address is multicast, otherwise return False.
@@ -325,6 +331,11 @@ def q2(addr):
 
 
     #pass
+```
+
+## Q3
+
+```
 def q3():
     # Return the well-known ports as a list of integers.
     # Ports 0 through 1023 are considered well-known.
@@ -335,6 +346,11 @@ def q3():
     return arr
 
     pass
+```
+
+## Q4
+
+```
 def q4(number):
     # Given a string for a number spelled out as a word,
     # return the number as an integer. The number will
@@ -353,6 +369,11 @@ def q4(number):
 
 
     pass
+```
+
+## Q5
+
+```
 def q5():
     # Read a string from the user and return the integer conversion of it.
     # Ensure the conversion is successful by removing any non-numeric characters.
@@ -369,6 +390,11 @@ def q5():
 
 
     pass
+```
+
+#Q6
+
+```
 def q6(first,middle,last,domain):
     # Given a name and domain, print to the screen their email address.
     # The address should take the form: 
@@ -381,6 +407,10 @@ def q6(first,middle,last,domain):
 
 
     pass
+```
+#Q7
+
+```
 def q7(infile,outfile):
     # Copy the contents of the file whose filename is given in 
     # infile to the file whose name is given in outfile. Overwrite
@@ -391,6 +421,12 @@ def q7(infile,outfile):
             
 
     pass
+
+```
+
+## Q8
+
+```
 def q8(address):
     # Given an email address of the form:
     # <first>.<middle initial>.<last>@<domain>.com
@@ -403,6 +439,12 @@ def q8(address):
     return tuple((address.replace('.com','')).replace('@','.').split('.'))
 
     pass
+
+```
+
+## Q9
+
+```
 def q9(strng):
     # Given a string, return a dictionary whose keys are the set of
     # unique characters within the string and whose values are the
@@ -416,7 +458,11 @@ def q9(strng):
         dict[x] = strng.count(x)
     return dict
     
-    pass    
+    pass
+```
+## Q10
+
+```
 def q10():
     # Return your last name as a string. Use all lowercase letters.
     pass
@@ -425,4 +471,4 @@ def q10():
 
 if __name__ == '__main__':
     pass
-
+```
