@@ -203,68 +203,83 @@ True
 ---'a'.isnumeric(a)
 False
 
-Python Practice
-Question 1
-Given the floatstr, which is a comma separated string of floats, return a list with each of the floats in the argument as elements in the list.
+# Python Practice
 
+## Question 1
+Given the floatstr, which is a comma separated string of floats, return a list with each of the floats in the argument as elements in the list.
+```
 lst = []
 for i in floatstr.split(','):
     lst.append(float(i))
-Question 2
+```
+## Question 2
 Given the variable length argument list, return the average of all the arguments as a float.
-
+```
 type(args)
     sum = 0 
     for addend in args:
         sum += addend
         avg = sum / float(len(args))
-    return avg 
-Question 3
-Given a list (lst) and a number of items (n), return a new list containing the last n entries in lst.
+    return avg
+``` 
+## Question 3
 
+Given a list (lst) and a number of items (n), return a new list containing the last n entries in lst.
+```
 lst1 = []
     for i in lst[-n:]:
         lst1.append(int(i))
     return lst1
-Question 4
-Given an input string, return a list containing the ordinal numbers of each character in the string in the order found in the input string.
+```
+## Question 4
 
+Given an input string, return a list containing the ordinal numbers of each character in the string in the order found in the input string.
+```
   lst = []
     for i in strng:
         lst.append(ord(i))
-    return lst 
-Question 5
-Given an input string, return a tuple with each element in the tuple containing a single word from the input string in order.
+    return lst
+```
+## Question 5
 
+Given an input string, return a tuple with each element in the tuple containing a single word from the input string in order.
+```
  arr = []
     arr = strng.split(' ')
     t = tuple(arr)
     return t
-Question 6
-Given a dictionary (catalog) whose keys are product names and values are product prices per unit and a list of tuples (order) of product names and quantities, compute and return the total value of the order.
+```
+## Question 6
 
+Given a dictionary (catalog) whose keys are product names and values are product prices per unit and a list of tuples (order) of product names and quantities, compute and return the total value of the order.
+```
  total = 0
     for i in order:
         total += catalog[i[0]]*i[1]
     return total
-Question 7
+```
+## Question 7
 Given a filename, open the file and return the length of the first line in the file excluding the line terminator.
-
+```
  with open(filename, 'r') as fp:
         i = fp.readline()
         return(len(i)) -1
-Question 8
-Given a filename and a list, write each entry from the list to the file on separate lines until a case-insensitive entry of "stop" is found in the list. If "stop" is not found in the list, write the entire list to the file on separate lines.
+```
+## Question 8
 
+Given a filename and a list, write each entry from the list to the file on separate lines until a case-insensitive entry of "stop" is found in the list. If "stop" is not found in the list, write the entire list to the file on separate lines.
+```
 with open(filename, 'w') as fp:
         for word in lst:
             if word.lower() == 'stop':
                 break
             else:
                 fp.write('{}\n'.format(word))
-Question 9
-Given the military time in the argument miltime, return a string containing the greeting of the day. 0300-1159 "Good Morning" 1200-1559 "Good Afternoon" 1600-2059 "Good Evening" 2100-0259 "Good Night"
+```
+## Question 9
 
+Given the military time in the argument miltime, return a string containing the greeting of the day. 0300-1159 "Good Morning" 1200-1559 "Good Afternoon" 1600-2059 "Good Evening" 2100-0259 "Good Night"
+```
  if miltime >= 300 and miltime <= 1159:
         return "Good Morning"
  elif miltime >= 1200 and miltime <= 1559:
@@ -273,14 +288,16 @@ Given the military time in the argument miltime, return a string containing the 
         return "Good Evening"
  elif miltime >= 2100 and miltime <= 259:
         return "Good Night"
-Question 10
-Given the argument numlist as a list of numbers, return True if all numbers in the list are NOT negative. If any numbers in the list are negative, return False.
+```
+## Question 10
 
+Given the argument numlist as a list of numbers, return True if all numbers in the list are NOT negative. If any numbers in the list are negative, return False.
+```
  for i in numlist:
         if i < 0:
             return False
  return True       
-
+```
 Python Practice 2
 def q1(radius):
     # Given the radius of a sphere, calculate and return 
